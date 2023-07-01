@@ -1,22 +1,19 @@
 import React from "react";
 import { View, Text, Button, StyleSheet } from 'react-native';
-// import { Ionicons } from '@expo/vector-icons/Ionicons';
-// import Icon from "react-native-ionicons";
 
-const HomeScreen = ({ navigation }) => {
+const AddScreen = ({ navigation }) => {
   return (
     <View style={StyleSheet.container}>
-      <Text> Home Screen</Text>
+      <Text>Chart Screen</Text>
       <Button
         title="Click Here"
         onPress={() => alert('Button Clicked!')}
       />
-      {/* <Icon name='md-home' color='blue' /> */}
     </View>
   );
 }
 
-export default HomeScreen;
+export default AddScreen;
 
 const styles = StyleSheet.create({
   container: {

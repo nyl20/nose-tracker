@@ -3,7 +3,7 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 // import { Ionicons } from '@expo/vector-icons/Ionicons';
 // import Icon from "react-native-ionicons";
 
-const HomeScreen = ({ navigation }) => {
+const PlusScreen = ({ navigation }) => {
   return (
     <View style={StyleSheet.container}>
       <Text> Home Screen</Text>
@@ -16,7 +16,7 @@ const HomeScreen = ({ navigation }) => {
   );
 }
 
-export default HomeScreen;
+export default PlusScreen;
 
 const styles = StyleSheet.create({
   container: {
