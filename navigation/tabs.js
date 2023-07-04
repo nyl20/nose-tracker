@@ -20,7 +20,7 @@ const CustomTab = ({ children, onPress }) => (
     }}
     onPress={onPress}
   >
-    <View style={{ width: 80, height: 80, borderRadius: 40, backgroundColor: "tomato" }}>{children}</View>
+    <View style={{ width: 80, height: 80, borderRadius: 40, backgroundColor: "#ff4e3d" }}>{children}</View>
   </TouchableOpacity>
 );
 
@@ -48,7 +48,7 @@ const Tab = createBottomTabNavigator();
 // );
 
 
-const Tabss = () => {
+const Tabs = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
@@ -65,7 +65,7 @@ const Tabss = () => {
           return <Ionicons name={iconName} size={32} />;
         },
         tabBarShowLabel: false,
-        tabBarActiveTintColor: 'tomato',
+        tabBarActiveTintColor: '#ff4e3d',
         tabBarInactiveTintColor: 'gray',
         tabBarStyle: { bottom: 5 },
         tabBarItemStyle: { marginTop: 8 }
@@ -80,51 +80,6 @@ const Tabss = () => {
         }} />
 
       <Tab.Screen name="Chart" component={ChartScreen} />
-
-    </Tab.Navigator>
-
-  );
-}
-
-
-const Tabs = () => {
-  return (
-    <Tab.Navigator
-      tabBarOptions={{
-        // showLabel: false,
-        height: 90
-      }}>
-      <Tab.Screen name="Home" component={HomeScreen}
-      // options={{
-      //   tabBarIcon: ({ focused }) => {
-      //     return (
-      //       // <View style={{alignItems: 'center', justifyContent: 'center', top:10}>
-      //       <Ionicons name='md-home' size={32} color='blue' />
-      //       // </View>
-      //     );
-      //   }
-      // }}
-      />
-
-      <Tab.Screen name="Add" component={PlusScreen}
-      // options={{
-      //   tabBarButton: (props) => (
-      //     <CustomTabBarButton {...props} />
-      //   )
-      // }}
-
-
-      />
-
-      <Tab.Screen name="Chart" component={ChartScreen}
-      // options={{
-      //   tabBarIcon: ({ focused }) => (
-      //     // <View style={{alignItems: 'center', justifyContent: 'center', top:10}>
-      //     <Ionicons name='stats-chart' size={32} color='blue' />
-      //     // </View>
-      //   )
-      // }} 
-      />
 
     </Tab.Navigator>
 
@@ -146,4 +101,4 @@ const tabstyles = StyleSheet.create({
 });
 
 // to use as component, have to export it
-export default Tabss;
+export default Tabs;
