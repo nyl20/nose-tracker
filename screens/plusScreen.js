@@ -6,7 +6,16 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const PlusScreen = ({ navigation }) => {
   return (
     <View style={StyleSheet.container}>
-      <Text> Home Screen</Text>
+      <Text>Add Event</Text>
+      <Text>Date:</Text>
+      <Text>Time:</Text>
+      <Text>Weather:</Text>
+      <Text>Location:</Text>
+      <Text>Duration:</Text>
+      <Text>Intensity:</Text>
+      <Text>Remedy:</Text>
+      <Text>Nasal Spray:</Text>
+      <Button title="Add Event" />
       <Button
         title="Click Here"
         onPress={() => alert('Button Clicked!')}
