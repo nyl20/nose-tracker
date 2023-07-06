@@ -9,6 +9,7 @@ import ProfileScreen from '../screens/profileScreen';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from "@react-navigation/native";
 import { View, Text, Button, StyleSheet, TouchableOpacity } from 'react-native';
+import { HomeStack } from "./homeStack";
 
 const CustomTab = ({ children, onPress }) => (
   <TouchableOpacity
@@ -52,6 +53,7 @@ const Tabs = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerShown: false,
         tabBarIcon: ({ focused }) => {
           let iconName;
           if (route.name === 'Home') {
@@ -70,7 +72,7 @@ const Tabs = () => {
         tabBarStyle: { bottom: 5 },
         tabBarItemStyle: { marginTop: 8 }
       })}>
-      <Tab.Screen name="Home" component={HomeScreen} />
+      <Tab.Screen name="Home" component={HomeStack} />
 
       <Tab.Screen name="Add" component={PlusScreen}
         options={{

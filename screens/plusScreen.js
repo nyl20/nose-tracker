@@ -46,6 +46,7 @@ const plusStyles = StyleSheet.create({
     flex: 1,
     alignItems: 'left',
     margin: 30,
+    marginTop: 65
   },
   input: {
     width: '100%',
